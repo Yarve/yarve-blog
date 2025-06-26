@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Монах и Монета / The Monk and the Coin</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 1rem;
+    }
+    nav {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    article {
+      display: none;
+    }
+    article.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button onclick="switchLang('ru')">Русский</button>
+    <button onclick="switchLang('en')">English</button>
+  </nav>
+
+  <article id="ru" lang="ru" class="active">
+    <h1>Монах и Монета</h1>
+    <img src="./images/monk.jpg" alt="Монах в лесу" width="300" />
+    <!-- Version на русском -->
+<p><small>
+Благодарю В. Ряполова, моего первого учителя-йога за эту притчу.
+Мне было тогда 20 лет.
+</small></p>
+<p>
+    Как-то раз шел один монах по лесу.
+	Настроение у него было скверное - на прошлой неделе разбилась любимая чашка.
+	Да что там любимая, единственная!
+	Куда монаху без чашки?
+    A сегодня в деревне базарный день.
+	Какие красивые изделия были в гончарном ряду - ковыляя по горной дороге,
+	монах погрузился в грустные воспоминания.
+</p><p>
+    Вдруг под ногами что-то блеснуло.
+	Он опустил глаза и быстро зажмурился...
+		Не может быть!
+		Монета!
+		Блестящая серебряная монета!
+		Откуда она взялась?Раздумывать было некогда.
+		Подтянув полы своего одеяния, монах припустил что есть духу, думая о новенькой
+		чашке, которую битый час рассматривал, не имея возможности купить.
+		Теперь у него достаточно и на чашку и на рис и даже на сладости!
+</p><p>
+    Перепрыгивая через небольшую реку, он уронил монету, которая тут же исчезла
+		из виду.
+		Несчастный начал торопливо искать свою драгоценную находку.
+		Однако чем дольше он ощупывал илистое дно, тем больше мути поднималось в
+		холодной воде.
+</p><p>
+    В отчаянии, без сил, монах выбрался на берег, проклиная свое невезение.
+		Солнце пригревало, но вода в это время года была ледяная.
+		Продрогший и обессиленный, глотая слезы, монах повалился на траву и забылся
+		тревожным сном.
+</p><p>
+    Его разбудило пение птиц и отдаленный шум деревенской ярмарки.
+		Солнечные лучи просушили мокрую одежду и на душе снова стало легко.
+		Мысленно распрощавшись с чашкой и сладостями, монах поднялся, чтобы продолжить
+		долгий путь.
+</p><p>
+    Между тем, пока он спал, течением реки унесло облака мути.
+		Монета блестела на мелководье.
+		Медленно опустив руку, монах поднял свою драгоценную находку.
+</p>
+  </article>
+
+<article id="en" lang="en">
+    <h1>The Monk and the Coin</h1>
+    <img src="./images/monk.jpg" alt="Monk in forest" width="300" />
+<!-- English version  -->
+<p><small>
+Special thanks to V. Ryapolov, my first yoga teacher.
+He told me this fable when I was 20.
+</small></p>
+<p>
+It happened in ancient times.<br>
+Once a monk went through the forest.<br>
+He was in a bad mood last week, his favorite bowl was broken.<br>
+(To be more precisely, his only one bowl).<br>
+Do you know what the bowl means for a monk?<br>
+It means everything.
+</p><p>
+Today was the market in the village.<br>
+Beautiful bowls were for sale!<br>
+Sobbing in sad thoughts, the monk limped along the forest path.
+</p><p>
+Suddenly something glittered under his feet.<br>
+He lowered his eyes and quickly closed his eyes…<br>
+That can not be!
+A coin!<br>
+A silver coin that shines and shines!<br>
+Where is it coming from?<br>
+He did not want to think about this.<br>
+He just turned, pulled up his robe, and hurried back in gallop.<br>
+In front of his inner eyes were a beautiful bowl, which he looked at for a long
+time without being able to buy. <br>
+Now he has enough money for the bowl and the delicious rice.<br>
+There will certainly be enough even for sweets!
+</p><p>
+As he bounced across the stream, he accidentally dropped the coin.<br>
+Immediately the coin disappeared in the water.<br>
+In vain the poor monk sought his valuable find.<br>
+The more he rummaged through the muddy ground, the more muddiness rose in the cold water.
+</p><p>
+Desperate and completely exhausted, the monk crawled on to the shore.<br>
+He cursed his misfortune and fell into the dry grass.<br>
+The sun stroked it with warm rays, but the water was icy at this time of the year.<br>
+Frozen and deeply unhappy, he wiped the tears and sank in troubled sleep.
+</p><p>
+He was awakened by joyous birds singing and the market noise in the distance.<br>
+Sunrays dried his clothes and he felt heavenly light.<br>
+He gave up his dream of the beautiful bowl full of sweets and rose to continue
+his long journey.
+</p><p>
+Meanwhile, the mud clouds were driven out by the current.<br>
+The coin shined on a shallow spot.<br>
+Slowly, he raised his treasure.
+</p>
+  </article>
+<script>
+    function switchLang(lang) {
+      document.getElementById('ru').classList.remove('active');
+      document.getElementById('en').classList.remove('active');
+      document.getElementById(lang).classList.add('active');
+    }
+  </script>
+  
+  
+</body>
+</html>
